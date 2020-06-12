@@ -8,8 +8,8 @@ import { Currency } from './currency';
 
 @Injectable()
 export class OperationService {
-  //private urlEndPoint: string = 'https://apirestbcp.azurewebsites.net/exchange';
-  private urlEndPoint: string = 'http://localhost:8080/exchange';
+  private urlEndPoint: string = 'https://apirestbcp.azurewebsites.net/exchange';
+  //private urlEndPoint: string = 'http://localhost:8080/exchange';
 
   private httpHeaders = new HttpHeaders({'Content-Type': 'application/json'})
 

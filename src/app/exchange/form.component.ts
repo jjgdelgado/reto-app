@@ -19,7 +19,7 @@ export class FormComponent {
   exchange(): void {
     this.operationService.exchange(this.exchangeRate)
       .subscribe(exchangeRate => {
-        swal(`${exchangeRate.mount}`, ` ${exchangeRate.sourceISO} equivalen a ${exchangeRate.mountExchange} ${exchangeRate.targetISO}`, 'success')
+        swal(`${exchangeRate.mountExchange} ${this.exchangeRate.targetISO}`, ``, 'success')
       }
       );
   }
